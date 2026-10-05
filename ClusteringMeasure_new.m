@@ -64,7 +64,7 @@ end
 Fscore = mean((2*precision.*recall)./(precision+recall+eps));
 [ARI,~,~,~]=RandIndex(Y,res);
 
-result = [ACC MIhat Purity Fscore ARI];
+result = [ACC MIhat Purity ARI];
 
 
 

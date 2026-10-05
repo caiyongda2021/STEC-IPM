@@ -91,7 +91,7 @@ for iter_exp = 1:repeatTime
     Mdl_C_all = fitcknn(C_model,Y_C_all);
     Y_clustering = predict(Mdl_C_all,X);
     clear B3
-    result(iter_exp,:) = ClusteringMeasure_new(Y_clustering,Y_true) 
+    result(iter_exp,:) = ClusteringMeasure_new(Y_true,Y_clustering) 
     clear Y_clustering
 end
 
